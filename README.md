@@ -1,2 +1,2 @@
 # Polytris
-Repository for a Tetris android like student project
+Repository for a Android Tetris like game

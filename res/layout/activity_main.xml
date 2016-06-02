@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linearMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuPrincipal"
+
+    android:background="@drawable/background_classique">
+
+    <ImageView
+        android:contentDescription="Image Jeu"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/polytris_logo_9"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/jouer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_game"
+        android:onClick="launchGame"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:background="@drawable/btn_classique" />
+
+    <Button
+        android:id="@+id/instructions"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/title_activity_page_intructions"
+        android:onClick="seeInstructions"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:background="@drawable/btn_classique"/>
+
+    <Button
+        android:id="@+id/options"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/title_activity_options"
+        android:onClick="changeOptions"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:background="@drawable/btn_classique"/>
+
+    <Button
+        android:id="@+id/highscores"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/highscores"
+        android:onClick="seeHighscores"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:background="@drawable/btn_classique"/>
+
+    <Button
+        android:text="@string/aboutbtn"
+        android:id="@+id/babout"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:onClick="seeAbout"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:background="@drawable/btn_about"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp" />
+</LinearLayout>
